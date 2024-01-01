@@ -21,7 +21,7 @@
     "dependencies": {
         "@vitest/coverage-v8": "^1.1.1",
         "eight-colors": "^1.0.3",
-        "monocart-coverage-reports": "~2.0.4"
+        "monocart-coverage-reports": "~2.0.5"
     },
     "devDependencies": {
         "eslint": "^8.56.0",
