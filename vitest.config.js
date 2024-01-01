@@ -7,7 +7,7 @@ export default defineConfig({
             enabled: true,
             include: ['src/**'],
             provider: 'custom',
-            customProviderModule: 'vitest-monocart-coverage',
+            customProviderModule: 'lib',
             customProviderOptions: {
                 // logging: 'debug',
                 reports: [
