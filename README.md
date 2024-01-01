@@ -1,4 +1,10 @@
-# vitest-monocart-coverage
+# Vitest Monocart Coverage
+
+[![](https://img.shields.io/npm/v/vitest-monocart-coverage)](https://www.npmjs.com/package/vitest-monocart-coverage)
+[![](https://badgen.net/npm/dw/vitest-monocart-coverage)](https://www.npmjs.com/package/vitest-monocart-coverage)
+![](https://img.shields.io/github/license/cenfun/vitest-monocart-coverage)
+
+
 > Generating native V8 coverage report for [Vitest](https://github.com/vitest-dev/vitest) with [Monocart coverage reports](https://github.com/cenfun/monocart-coverage-reports)
 
 ## Install
