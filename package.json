@@ -21,13 +21,13 @@
     ],
     "license": "MIT",
     "dependencies": {
-        "@vitest/coverage-v8": "^1.1.1",
-        "eight-colors": "^1.0.3",
-        "monocart-coverage-reports": "~2.0.5"
+        "@vitest/coverage-v8": "^1.2.1",
+        "eight-colors": "^1.2.1",
+        "monocart-coverage-reports": "~2.2.2"
     },
     "devDependencies": {
         "eslint": "^8.56.0",
         "eslint-config-plus": "^1.0.6",
-        "vitest": "^1.1.1"
+        "vitest": "^1.2.1"
     }
 }
