@@ -5,9 +5,17 @@ export function sum(a, b) {
 
     });
 
+    if (a === 'random') {
+        console.log(a);
+    }
+
     return a + b;
 }
 
-export function uncoveredFunction() {
+export function uncoveredFunction(a) {
     console.log('uncovered function');
+
+    if (a) {
+        console.log(a);
+    }
 }

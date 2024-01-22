@@ -6,3 +6,7 @@ export function uncovered(v) {
         console.log('branch');
     }
 }
+
+if (a === 'random') {
+    console.log(a);
+}
