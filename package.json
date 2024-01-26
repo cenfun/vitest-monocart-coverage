@@ -6,24 +6,24 @@
     "main": "./lib/index.js",
     "exports": {
         ".": {
+            "types": "./lib/index.d.ts",
             "import": "./lib/index.js",
             "default": "./lib/index.js"
         },
         "./package.json": "./package.json"
     },
+    "types": "./lib/index.d.ts",
     "scripts": {
-        "link": "node ./scripts/link.js",
-        "test": "vitest",
-        "coverage": "vitest run --coverage"
+        "link": "sf link ./ -f",
+        "test": "vitest run --coverage",
+        "patch": "npm run test && sf publish patch -r"
     },
     "files": [
         "lib"
     ],
     "license": "MIT",
     "dependencies": {
-        "@vitest/coverage-v8": "^1.2.1",
-        "eight-colors": "^1.2.1",
-        "monocart-coverage-reports": "~2.2.2"
+        "monocart-coverage-reports": "~2.3.1"
     },
     "devDependencies": {
         "eslint": "^8.56.0",

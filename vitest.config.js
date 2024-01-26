@@ -8,15 +8,20 @@ export default defineConfig({
             include: ['src/**'],
             provider: 'custom',
             customProviderModule: 'lib',
-            customProviderOptions: {
-                // logging: 'debug',
-                reports: [
-                    ['v8'],
-                    ['v8-json']
-                ],
-                lcov: true,
-                outputDir: 'coverage'
-            }
+
+            // coverageReportOptions: {
+            //     // logging: 'debug',
+            //     name: 'My Vitest Coverage Report',
+            //     reports: [
+            //         ['v8'],
+            //         ['console-summary']
+            //     ],
+            //     lcov: true,
+            //     outputDir: 'coverage'
+            // }
+
+            coverageReportOptions: 'mrc.config.js'
+
         }
     }
 });
