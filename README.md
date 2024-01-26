@@ -23,9 +23,13 @@ export default defineConfig({
         coverage: {
             enabled: true,
             include: ['src/**'],
+            
             provider: 'custom',
             customProviderModule: 'vitest-monocart-coverage',
-            customProviderOptions: {
+
+            // or a config path for coverage options
+            // coverageReportOptions: "mcr.config.js"
+            coverageReportOptions: {
                 // https://github.com/cenfun/monocart-coverage-reports?#default-options
                 // logging: 'debug',
                 reports: [
@@ -40,3 +44,9 @@ export default defineConfig({
 });
 ```
 see Vitest [Custom Coverage Provider](https://vitest.dev/guide/coverage.html#custom-coverage-provider)
+
+
+## Changelog
+
+- 1.1.0
+    - (Breaking) rename customProviderOptions to coverageReportOptions, and supports string as a config path

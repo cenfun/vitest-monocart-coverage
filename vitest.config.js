@@ -6,6 +6,7 @@ export default defineConfig({
         coverage: {
             enabled: true,
             include: ['src/**'],
+
             provider: 'custom',
             customProviderModule: 'lib',
 
@@ -20,7 +21,7 @@ export default defineConfig({
             //     outputDir: 'coverage'
             // }
 
-            coverageReportOptions: 'mrc.config.js'
+            coverageReportOptions: 'mcr.config.js'
 
         }
     }
