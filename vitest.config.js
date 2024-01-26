@@ -8,7 +8,7 @@ export default defineConfig({
             include: ['src/**'],
 
             provider: 'custom',
-            customProviderModule: 'lib',
+            customProviderModule: 'lib'
 
             // coverageReportOptions: {
             //     // logging: 'debug',
@@ -21,7 +21,7 @@ export default defineConfig({
             //     outputDir: 'coverage'
             // }
 
-            coverageReportOptions: 'mcr.config.js'
+            // coverageReportOptions: 'mcr.config.js'
 
         }
     }

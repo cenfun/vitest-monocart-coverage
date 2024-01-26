@@ -48,5 +48,6 @@ see Vitest [Custom Coverage Provider](https://vitest.dev/guide/coverage.html#cus
 
 ## Changelog
 
-- 1.1.0
+- 1.1.1
     - (Breaking) rename customProviderOptions to coverageReportOptions, and supports string as a config path
+    - supports istanbul data
