@@ -7,7 +7,7 @@ export default {
     reports: [
         ['v8'],
         // ['html'],
-        ['console-summary']
+        ['console-details']
     ],
     lcov: true,
     outputDir: 'coverage',
