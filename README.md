@@ -30,13 +30,17 @@ export default defineConfig({
             // or a config path for coverage options
             // coverageReportOptions: "mcr.config.js"
             coverageReportOptions: {
-                // https://github.com/cenfun/monocart-coverage-reports?#default-options
+                // https://github.com/cenfun/monocart-coverage-reports
                 // logging: 'debug',
+
+                name: 'My Vitest Coverage Report',
+
                 reports: [
-                    ['v8'],
-                    ['v8-json']
+                    'console-details',
+                    'v8'
                 ],
                 lcov: true,
+
                 outputDir: 'coverage'
             }
         }

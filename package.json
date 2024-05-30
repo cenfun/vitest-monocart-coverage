@@ -23,13 +23,13 @@
     ],
     "license": "MIT",
     "dependencies": {
-        "@vitest/coverage-istanbul": "^1.4.0",
-        "@vitest/coverage-v8": "^1.4.0",
-        "monocart-coverage-reports": "^2.7.3"
+        "@vitest/coverage-istanbul": "^1.6.0",
+        "@vitest/coverage-v8": "^1.6.0",
+        "monocart-coverage-reports": "^2.8.3"
     },
     "devDependencies": {
-        "eslint": "^8.57.0",
-        "eslint-config-plus": "^1.0.6",
-        "vitest": "^1.4.0"
+        "eslint": "^9.3.0",
+        "eslint-config-plus": "^2.0.1",
+        "vitest": "^1.6.0"
     }
 }

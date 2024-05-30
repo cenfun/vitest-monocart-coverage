@@ -4,13 +4,15 @@ export default {
     // provider: 'istanbul',
 
     name: 'My Vitest Coverage Report',
+
     reports: [
-        ['v8'],
-        // ['html'],
-        ['console-details']
+        'console-details',
+        'v8'
     ],
     lcov: true,
+
     outputDir: 'coverage',
+
     onEnd: (results) => {
         console.log(`coverage report generated: ${results.reportPath}`);
     }
