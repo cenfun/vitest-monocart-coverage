@@ -47,7 +47,8 @@ export default defineConfig({
     }
 });
 ```
-see Vitest [Custom Coverage Provider](https://vitest.dev/guide/coverage.html#custom-coverage-provider)
+- NOTE: `coverageReportOptions` is unknown property of Vitest `coverage` when using Typescript. Please move the `coverageReportOptions` to default config file `mcr.config.js`
+- See Vitest [Custom Coverage Provider](https://vitest.dev/guide/coverage.html#custom-coverage-provider)
 
 
 ## Changelog
