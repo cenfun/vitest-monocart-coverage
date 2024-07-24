@@ -53,6 +53,9 @@ export default defineConfig({
 
 ## Changelog
 
+- 2.0.0
+    - (Breaking) updated for vitest v2
+
 - 1.1.1
     - (Breaking) rename customProviderOptions to coverageReportOptions, and supports string as a config path
     - supports istanbul data
