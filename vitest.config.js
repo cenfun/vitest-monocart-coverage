@@ -10,19 +10,6 @@ export default defineConfig({
             provider: 'custom',
             customProviderModule: 'lib'
 
-            // coverageReportOptions: {
-            //     // logging: 'debug',
-            //     name: 'My Vitest Coverage Report',
-            //     reports: [
-            //         ['v8'],
-            //         ['console-summary']
-            //     ],
-            //     lcov: true,
-            //     outputDir: 'coverage'
-            // }
-
-            // coverageReportOptions: 'mcr.config.js'
-
         }
     }
 });

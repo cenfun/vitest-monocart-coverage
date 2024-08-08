@@ -25,33 +25,51 @@ export default defineConfig({
             include: ['src/**'],
             
             provider: 'custom',
-            customProviderModule: 'vitest-monocart-coverage',
+            customProviderModule: 'vitest-monocart-coverage'
 
-            // or a config path for coverage options
-            // coverageReportOptions: "mcr.config.js"
-            coverageReportOptions: {
-                // https://github.com/cenfun/monocart-coverage-reports
-                // logging: 'debug',
-
-                name: 'My Vitest Coverage Report',
-
-                reports: [
-                    'console-details',
-                    'v8'
-                ],
-                lcov: true,
-
-                outputDir: 'coverage'
-            }
         }
     }
 });
 ```
-- NOTE: `coverageReportOptions` is unknown property of Vitest `coverage` when using Typescript. Please move the `coverageReportOptions` to default config file `mcr.config.js`
-- See Vitest [Custom Coverage Provider](https://vitest.dev/guide/coverage.html#custom-coverage-provider)
+See Vitest [custom coverage provider](https://vitest.dev/guide/coverage.html#custom-coverage-provider)
+
+## Config file for Coverage Options 
+
+- mcr.config.js
+- mcr.config.cjs
+- mcr.config.mjs
+- mcr.config.json
+- mcr.config.ts
+
+See config example [mcr.config.js](./mcr.config.js)
+```js
+// mcr.config.js
+export default {
+    // logging: 'debug',
+
+    // provider: 'istanbul',
+
+    name: 'My Vitest Coverage Report',
+
+    reports: [
+        'console-details',
+        'v8'
+    ],
+    lcov: true,
+
+    outputDir: 'coverage',
+
+    onEnd: (results) => {
+        console.log(`coverage report generated: ${results.reportPath}`);
+    }
+};
+```
 
 
 ## Changelog
+
+- 2.1.0
+    - updated for loading config
 
 - 2.0.0
     - (Breaking) updated for vitest v2
