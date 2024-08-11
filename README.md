@@ -64,7 +64,7 @@ export default {
     }
 };
 ```
-
+See [monocart-coverage-reports](https://github.com/cenfun/monocart-coverage-reports) for more coverage options.
 
 ## Changelog
 
