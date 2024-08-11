@@ -1,7 +1,7 @@
 ## Changelog
 
 - 2.1.1
-    - supported vite workspace (#3)
+    - supported vitest workspace (#3)
 
 - 2.1.0
     - updated for loading config
