@@ -25,10 +25,10 @@
     "dependencies": {
         "@vitest/coverage-istanbul": "^2.0.5",
         "@vitest/coverage-v8": "^2.0.5",
-        "monocart-coverage-reports": "^2.10.2"
+        "monocart-coverage-reports": "^2.10.3"
     },
     "devDependencies": {
-        "eslint": "^9.8.0",
+        "eslint": "^9.9.1",
         "eslint-config-plus": "^2.0.2",
         "vitest": "^2.0.5"
     }

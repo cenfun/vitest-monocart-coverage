@@ -1,5 +1,8 @@
 ## Changelog
 
+- 2.1.2
+    - fixed the error log `not found file` (#5)
+
 - 2.1.1
     - supported vitest workspace (#3)
 
