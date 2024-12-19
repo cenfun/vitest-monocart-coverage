@@ -1,5 +1,8 @@
 ## Changelog
 
+- 2.1.3
+    - fixed errors for vitest@2.1
+
 - 2.1.2
     - fixed the error log `not found file` (#5)
 
