@@ -5,6 +5,9 @@ export default {
 
     name: 'My Vitest Coverage Report',
 
+    clean: true,
+    cleanCache: true,
+
     reports: [
         'console-details',
         'v8'
