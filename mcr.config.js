@@ -1,3 +1,5 @@
+import path from 'path';
+
 export default {
     // logging: 'debug',
 
@@ -15,6 +17,22 @@ export default {
     lcov: true,
 
     outputDir: 'coverage',
+
+    entryFilter: {
+        'browser.js?import': false,
+        '*': true
+    },
+
+    sourcePath: (filePath, info) => {
+
+        filePath = filePath.split('?').shift();
+
+        if (!filePath.includes('/') && info.distFile) {
+            return `${path.dirname(info.distFile)}/${filePath}`;
+        }
+
+        return filePath;
+    },
 
     onEnd: (results) => {
         console.log(`coverage report generated: ${results.reportPath}`);
