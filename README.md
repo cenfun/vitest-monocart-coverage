@@ -31,6 +31,35 @@ export default defineConfig({
     }
 });
 ```
+Work with `@vitest/browser`
+```js
+// vitest.config.js
+import { defineConfig } from 'vitest/config';
+
+export default defineConfig({
+    test: {
+        include: ['test/*.test.js'],
+        coverage: {
+            enabled: true,
+            include: ['src/**'],
+            
+            provider: 'custom',
+            customProviderModule: 'vitest-monocart-coverage/browser'
+
+        },
+
+        browser: {
+            enabled: true,
+            headless: true,
+            instances: [{
+                browser: 'chromium'
+            }],
+            provider: 'playwright'
+        }
+    }
+});
+```
+
 See Vitest [custom coverage provider](https://vitest.dev/guide/coverage.html#custom-coverage-provider)
 
 ## Config file for Coverage Options 

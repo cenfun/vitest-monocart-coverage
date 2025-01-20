@@ -1,5 +1,9 @@
 ## Changelog
 
+- 3.0.0
+    - supported vitest@3
+    - supported @vitest/browser@3
+
 - 2.1.3
     - fixed errors for vitest@2.1
 
