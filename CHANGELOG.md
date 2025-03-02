@@ -1,5 +1,8 @@
 ## Changelog
 
+- 3.0.1
+    - exports node and browser
+
 - 3.0.0
     - supported vitest@3
     - supported @vitest/browser@3
