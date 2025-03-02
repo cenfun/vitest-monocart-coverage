@@ -1,6 +1,6 @@
 {
     "name": "vitest-monocart-coverage",
-    "version": "3.0.0",
+    "version": "3.0.1",
     "description": "",
     "type": "module",
     "main": "./lib/index.js",
