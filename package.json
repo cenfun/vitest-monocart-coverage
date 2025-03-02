@@ -7,8 +7,8 @@
     "exports": {
         ".": {
             "types": "./lib/index.d.ts",
-            "import": "./lib/index.js",
-            "default": "./lib/index.js"
+            "node": "./lib/index.js",
+            "default": "./lib/browser.js"
         },
         "./browser": {
             "types": "./lib/index.d.ts",
@@ -20,8 +20,7 @@
     "types": "./lib/index.d.ts",
     "scripts": {
         "link": "sf link ./ -f",
-        "test": "vitest run",
-        "test:browser": "vitest run -c vitest.browser.config.js",
+        "test": "vitest run && vitest run -c vitest.browser.config.js",
         "patch": "npm run test && sf publish patch -r"
     },
     "files": [
@@ -29,15 +28,15 @@
     ],
     "license": "MIT",
     "dependencies": {
-        "@vitest/coverage-istanbul": "^3.0.2",
-        "@vitest/coverage-v8": "^3.0.2",
-        "monocart-coverage-reports": "^2.12.0"
+        "@vitest/coverage-istanbul": "^3.0.7",
+        "@vitest/coverage-v8": "^3.0.7",
+        "monocart-coverage-reports": "^2.12.2"
     },
     "devDependencies": {
-        "@vitest/browser": "^3.0.2",
-        "eslint": "^9.18.0",
+        "@vitest/browser": "^3.0.7",
+        "eslint": "^9.21.0",
         "eslint-config-plus": "^2.0.2",
-        "playwright": "^1.49.1",
-        "vitest": "^3.0.2"
+        "playwright": "^1.50.1",
+        "vitest": "^3.0.7"
     }
 }
