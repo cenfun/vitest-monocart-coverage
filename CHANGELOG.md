@@ -1,5 +1,8 @@
 ## Changelog
 
+- 3.0.2
+    - fixed (#12)
+
 - 3.0.1
     - exports node and browser
 
