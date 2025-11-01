@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitest/config';
+import { playwright } from '@vitest/browser-playwright';
 
 export default defineConfig({
     test: {
@@ -19,7 +20,7 @@ export default defineConfig({
             instances: [{
                 browser: 'chromium'
             }],
-            provider: 'playwright'
+            provider: playwright()
         }
     }
 });

@@ -20,7 +20,8 @@
     "types": "./lib/index.d.ts",
     "scripts": {
         "link": "sf link ./ -f",
-        "test": "vitest run && vitest run -c vitest.config.js",
+        "test": "vitest run -c vitest.config.js",
+        "test:browser": "vitest run -c vitest.browser.config.js",
         "patch": "npm run test && sf publish patch -r"
     },
     "files": [
@@ -28,15 +29,16 @@
     ],
     "license": "MIT",
     "dependencies": {
-        "@vitest/coverage-istanbul": "^3.2.4",
-        "@vitest/coverage-v8": "^3.2.4",
-        "monocart-coverage-reports": "^2.12.6"
+        "@vitest/coverage-istanbul": "^4.0.5",
+        "@vitest/coverage-v8": "^4.0.5",
+        "monocart-coverage-reports": "^2.12.9",
+        "test-exclude": "^7.0.1"
     },
     "devDependencies": {
-        "@vitest/browser": "^3.2.4",
-        "eslint": "^9.34.0",
+        "@vitest/browser": "^4.0.5",
+        "@vitest/browser-playwright": "^4.0.6",
+        "eslint": "^9.38.0",
         "eslint-config-plus": "^2.0.3",
-        "playwright": "^1.55.0",
-        "vitest": "^3.2.4"
+        "vitest": "^4.0.5"
     }
 }

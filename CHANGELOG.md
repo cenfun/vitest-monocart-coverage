@@ -1,5 +1,8 @@
 ## Changelog
 
+- 4.0.0
+    - Support Vitest V4 (#13)
+
 - 3.0.2
     - fixed (#12)
 
