@@ -29,16 +29,16 @@
     ],
     "license": "MIT",
     "dependencies": {
-        "@vitest/coverage-istanbul": "^4.0.5",
-        "@vitest/coverage-v8": "^4.0.5",
+        "@vitest/coverage-istanbul": "^4.0.15",
+        "@vitest/coverage-v8": "^4.0.15",
         "monocart-coverage-reports": "^2.12.9",
         "test-exclude": "^7.0.1"
     },
     "devDependencies": {
-        "@vitest/browser": "^4.0.5",
-        "@vitest/browser-playwright": "^4.0.6",
-        "eslint": "^9.38.0",
+        "@vitest/browser": "^4.0.15",
+        "@vitest/browser-playwright": "^4.0.15",
+        "eslint": "^9.39.1",
         "eslint-config-plus": "^2.0.3",
-        "vitest": "^4.0.5"
+        "vitest": "^4.0.15"
     }
 }
