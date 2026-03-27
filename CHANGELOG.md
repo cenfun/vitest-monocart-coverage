@@ -1,5 +1,11 @@
 ## Changelog
 
+- 4.0.2
+    - updated deps
+
+- 4.0.1
+    - fixed #15    
+
 - 4.0.0
     - Support Vitest V4 (#13)
 
