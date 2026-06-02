@@ -3,8 +3,6 @@ import path from 'path';
 export default {
     // logging: 'debug',
 
-    // provider: 'istanbul',
-
     name: 'My Vitest Coverage Report',
 
     clean: true,

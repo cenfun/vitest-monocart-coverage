@@ -78,8 +78,6 @@ See config example [mcr.config.js](./mcr.config.js)
 export default {
     // logging: 'debug',
 
-    // provider: 'istanbul',
-
     name: 'My Vitest Coverage Report',
 
     reports: [

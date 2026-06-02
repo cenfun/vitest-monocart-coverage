@@ -1,5 +1,11 @@
 ## Changelog
 
+- 5.0.0
+    - (Breaking) Removed Istanbul coverage support
+    - (Breaking) Only V8 coverage is supported
+    - (Breaking) Updated to Vitest v5 (import BaseCoverageProvider from 'vitest/node')
+    - Removed dependencies: @vitest/coverage-istanbul, istanbul-lib-instrument, test-exclude
+
 - 4.0.2
     - updated deps
 
