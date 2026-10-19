@@ -12,6 +12,10 @@
 npm i vitest-monocart-coverage -D
 ```
 
+Requires Node.js `>=22.15.0` (Vitest 5 and monocart-coverage-reports 3).
+
+Coverage is collected with the official `@vitest/coverage-v8` provider and runtime. Monocart generates the reports directly from the raw V8 coverage data, so no V8 → Istanbul conversion is needed. Vitest coverage thresholds are still supported through the official coverage map.
+
 ## Vitest Config
 ```js
 // vitest.config.js
