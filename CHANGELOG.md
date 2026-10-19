@@ -10,6 +10,7 @@
     - Updated browser coverage collection to Vitest v5 browser commands
     - Added @vitest/coverage-v8 as a dependency
     - Added `engines` requiring Node.js `>=22.15.0`
+    - Added an AI agent skill under `skills/vitest-monocart-coverage/`, included in the npm package
     - Removed dependencies: @vitest/coverage-istanbul, istanbul-lib-instrument, test-exclude
 
 - 4.0.2

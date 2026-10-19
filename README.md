@@ -99,6 +99,21 @@ export default {
 ```
 See [monocart-coverage-reports](https://github.com/cenfun/monocart-coverage-reports) for more coverage options.
 
+## AI Agent Skill
+
+The reusable [Vitest Monocart Coverage skill](skills/vitest-monocart-coverage/SKILL.md) helps AI coding agents configure Node.js and `@vitest/browser` coverage, set Monocart options and filters, debug missing or incorrectly mapped coverage, handle thresholds, and maintain this repository. It uses a main `SKILL.md` with task-specific references loaded on demand.
+
+The npm package includes `skills/vitest-monocart-coverage/`. Copy this **entire directory**, including `references/`, into your agent's supported skills location, or ask the agent to read `SKILL.md` directly. Installing the package does not automatically register the skill or modify agent settings. The instructions are in English; requests and responses can use any language.
+
+From the host project root, locate the installed skill and package manifest:
+
+```sh
+node -p "require.resolve('vitest-monocart-coverage/skills/vitest-monocart-coverage/SKILL.md')"
+node -p "require.resolve('vitest-monocart-coverage/package.json')"
+```
+
+Read the resolved skill, then follow its relative reference links. It supports the 5.x line and later only. These commands resolve files; they do not import Markdown as JavaScript.
+
 ## Changelog
 
 - [CHANGELOG.md](CHANGELOG.md)

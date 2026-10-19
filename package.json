@@ -15,6 +15,7 @@
             "import": "./lib/browser.js",
             "default": "./lib/browser.js"
         },
+        "./skills/*": "./skills/*",
         "./package.json": "./package.json"
     },
     "types": "./lib/index.d.ts",
@@ -25,7 +26,8 @@
         "patch": "npm run test && sf publish patch -r"
     },
     "files": [
-        "lib"
+        "lib",
+        "skills"
     ],
     "license": "MIT",
     "engines": {
