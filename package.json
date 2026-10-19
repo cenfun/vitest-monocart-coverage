@@ -20,10 +20,8 @@
     },
     "types": "./lib/index.d.ts",
     "scripts": {
-        "link": "sf link ./ -f",
         "test": "vitest run -c vitest.config.js",
-        "test:browser": "vitest run -c vitest.browser.config.js",
-        "patch": "npm run test && sf publish patch -r"
+        "test:browser": "vitest run -c vitest.browser.config.js"
     },
     "files": [
         "lib",
